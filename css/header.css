@@ -1,0 +1,65 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contenedor-header a img {
+    width: auto;
+    height: 60px;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 70px;
+    backdrop-filter: blur(5px);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu li a i {
+    padding-right: 2px;
+    font-size: 1.2em;
+}
+
+.menu li a {
+    position: relative;
+    color: black;
+    font-family: 'FuturaBold';
+    font-size: 1.2em;
+}
+
+.bx-heart {
+    color: magenta;
+}
+
+.bx-bulb, .bx-palette,
+.bx-support {
+    color: #FF8000
+}
+
+/* Pseudoclases */
+
+.menu li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border: solid 1px #F49621;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu li a:hover::before {
+      transform: scaleX(1);
+  }

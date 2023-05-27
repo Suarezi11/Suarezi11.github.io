@@ -1,0 +1,53 @@
+@import url(header.css);
+@import url(responsive.css);
+@import url(inicio.css);
+@import url(banner.css);
+@font-face {
+    font-family: Adelia;
+    src:url(/fonts/Adelia.ttf) format('truetype');
+}
+@font-face {
+    font-family: Futura;
+    src:url(/fonts/futur.ttf) format('truetype');
+    font-family: Futurabold;
+    src:url(/fonts/Futura\ Bold\ font.ttf) format('truetype');
+}
+@font-face {
+    font-family: FuturaItalic;
+    src:url(/fonts/Futura\ Book\ Italic\ font.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
+body {
+    font-family: 'Futura', serif;
+    padding: 0 20px;
+    background-image: url(/img/extras/amarillo/puntera-amarillo-izquierda.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50vw;
+}
+
+main {
+    padding-top: 80px;
+    min-width: 464px;
+}
+
+.lorem {
+    padding-top: 100px;
+}
+
